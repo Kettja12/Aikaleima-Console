@@ -1,0 +1,6 @@
+//! Tämä jaettu kirjasto sisältää vakioita API-kutsuja varten.
+
+pub const DEVICE_LOG_IN: &str = "318DF8BD-2A40-4DB3-8B3A-9F32EC5725D3";
+pub const STAMPCATEGORY_NAMES: &str = "A1B2C3D4-E5F6-4711-8910-1234567890AB";
+pub const SAVE_STAMP_ASYNC: &str = "24DE5977-0465-492C-A6EA-826689B4DD00";
+pub const USER_LOG_IN: &str = "B34FA9EA-695A-46BF-9E90-B8672BEE53F0";
