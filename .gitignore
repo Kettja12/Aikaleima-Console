@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/shared/target/debug
+/.vs/Console/v18
+/.vs
+/target/rust-analyzer
+/shared/target
