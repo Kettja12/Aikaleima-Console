@@ -1,0 +1,22 @@
+id;deviceKey;stamperKey;stamperName;stampcategoryKey;stampcategoryName;timestamp;state;latitude;longitude
+21;Windows pääte;123456;Jari;09080909;Sisään;14.10.2025 20.27.09;;62.87; 27.62
+20;Samsung 1;123456;Jari;bgkgf;Ulos;12.10.2025 14.12.57;;;
+19;Samsung 1;123456;Jari;09080909;Sisään;12.10.2025 14.12.53;;;
+18;Laite 2;123456;Jari;bgkgf;Ulos;12.10.2025 10.56.57;;;
+17;Laite 2;123456;Jari;09080909;Sisään;12.10.2025 10.56.52;;;
+16;Laite 2;123456;Jari;09080909;Sisään;10/12/2025 10:55:54 AM;;;
+15;Laite 2;123456;Jari;bgkgf;Ulos;10/12/2025 10:52:29 AM;;;
+14;Laite 2;123456;Jari;09080909;Sisään;10/12/2025 10:52:23 AM;;;
+13;Laite 1;123456;Jari;09080909;Sisään;12.10.2025 13.42.30;;;
+12;Laite 1;123456;Jari;bgkgf;Ulos;12.10.2025 13.42.05;;;
+11;Laite 1;123456;Jari;09080909;Sisään;29.9.2025 11.40.16;;;
+10;Laite 1;123456;Jari;bgkgf;Ulos;29.9.2025 10.38.50;;;
+9;Laite 1;123456;Jari;bgkgf;Ulos;29.9.2025 10.33.40;;;
+8;Laite 1;123456;Jari;bgkgf;Ulos;29.9.2025 10.32.11;;;
+7;Laite 1;123456;Jari;09080909;Sisään;29.9.2025 10.31.00;;;
+6;Laite 1;123456;Jari;09080909;Sisään;29.9.2025 10.03.41;;;
+5;Laite 1;123456;Jari;09080909;Sisään;29.9.2025 9.59.21;;;
+4;Laite 1;123456;Jari;;;29.9.2025 9.58.01;;;
+3;Laite 1;123456;Jari;bgkgf;Ulos;29.9.2025 9.57.11;;;
+2;Laite 1;123456;Jari;09080909;Sisään;28.9.2025 21.51.39;;;
+1;Laite 1;123456;Jari;09080909;Sisään;28.9.2025 17.00.47;;;

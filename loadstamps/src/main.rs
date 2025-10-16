@@ -15,8 +15,8 @@ async fn main() -> Result<(), reqwest::Error> {
             .read_line(&mut login_token_input)
             .expect("Rivinvaihtoa ei voitu lukea");
     }
-    let login_token = login_token_input.trim();
 
+    let login_token = login_token_input.trim();
 
     let request = shared_api::requests::Request {
         login_token: login_token
@@ -30,24 +30,22 @@ async fn main() -> Result<(), reqwest::Error> {
     println!("Palvelin: {}", server_url);
 
     let response = reqwest::Client::new()
-        .post(format!("{}/{}", server_url, shared_api::api_calls::USER_LOG_IN))
+        .post(format!("{}/{}", server_url, shared_api::api_calls::STAMPS))
         .json(&request)
         .send()
         .await?;
 
     if response.status().is_success() {
-        // Jäsennetään vastaus suoraan DeviceResponse-structiksi.
-        // Tämä onnistuu nyt, kun struct vastaa JSON-dataa.
-        let device_response: shared_api::responces::DeviceResponse = response.json().await?;
-        println!("Vastaus palvelimelta (jäsennetty):");
-        println!("{:#?}", device_response);
+        let stamps_response: shared_api::responces::StampsResponse = response.json().await?;
+        println!("Vastaus palvelimelta jäsennetty onnistuneesti. Leimoja löytyi: {}", stamps_response.stamps.len());
+        println!("{:#?}", stamps_response);
 
-        // Tallennetaan kaikki vastauksen kentät asetustiedostoon
-        println!("Päivitetään asetustiedostoa settings.txt...");
-        if let Err(e) = shared_api::methods::save_device_response_settings("settings.txt", &device_response) {
-            println!("Virhe asetusten tallennuksessa: {}", e);
+        // Tallennetaan leimat CSV-tiedostoon
+        println!("\nTallennetaan leimat tiedostoon stamps.csv...");
+        if let Err(e) = shared_api::methods::save_stamps_to_csv("stamps.csv", &stamps_response.stamps) {
+            println!("Virhe CSV-tiedoston kirjoituksessa: {}", e);
         } else {
-            println!("Asetukset tallennettu onnistuneesti.");
+            println!("Leimat tallennettu onnistuneesti.");
         }
     } else {
         println!("Pyyntö epäonnistui, status: {}", response.status());

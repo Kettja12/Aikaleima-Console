@@ -7,3 +7,4 @@
 /.vs
 /target/rust-analyzer
 /shared/target
+/loadstamps/target

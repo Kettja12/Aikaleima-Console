@@ -1,0 +1,6 @@
+activated=false
+name=API-Client
+id=4
+status=
+login_token=ca097b89-46a8-49c3-8f6d-f31eff848a7a
+pincode=false

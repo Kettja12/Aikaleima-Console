@@ -1,5 +1,5 @@
 [package]
-name = "returnkey"
+name = "loadstamps"
 version = "0.1.0"
 edition = "2024"
 
@@ -9,3 +9,4 @@ serde = { version = "1.0", features = ["derive"] }
 tokio = { version = "1", features = ["full"] }
 shared_api = { path = "../shared" }
 serde_json = "1.0"
+csv = "1.3"
