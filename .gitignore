@@ -8,3 +8,4 @@
 /target/rust-analyzer
 /shared/target
 /loadstamps/target
+/loadstamps/settings.txt
