@@ -56,8 +56,8 @@ pub fn save_setting(file_path: &str, key: &str, value: &str) -> io::Result<()> {
     Ok(())
 }
 
-/// Tallentaa kaikki DeviceResponse-rakenteen kentät asetustiedostoon.
-pub fn save_device_response_settings(file_path: &str, response: &super::responces::DeviceResponse) -> io::Result<()> {
+/// Tallentaa kaikki UserResponse-rakenteen kentät asetustiedostoon.
+pub fn save_user_response_settings(file_path: &str, response: &super::responces::UserResponse) -> io::Result<()> {
     // Lue olemassa olevat asetukset, tai luo tyhjä kartta jos tiedostoa ei ole.
     let mut settings = match read_key_value_file(file_path) {
         Ok(s) => s,
@@ -72,6 +72,32 @@ pub fn save_device_response_settings(file_path: &str, response: &super::responce
     settings.insert("login_token".to_string(), response.token.clone()); // Käytetään avainta "login_token"
     settings.insert("activated".to_string(), response.activated.to_string());
     settings.insert("pincode".to_string(), response.pincode.to_string());
+
+    // Kirjoita kaikki asetukset takaisin tiedostoon.
+    let mut file = File::create(file_path)?;
+    for (k, v) in settings.iter() {
+        writeln!(file, "{}={}", k, v)?;
+    }
+
+    Ok(())
+}
+/// Tallentaa kaikki DeviceResponse-rakenteen kentät asetustiedostoon.
+pub fn save_device_response_settings(file_path: &str, response: &super::responces::DeviceResponse) -> io::Result<()> {
+    // Lue olemassa olevat asetukset, tai luo tyhjä kartta jos tiedostoa ei ole.
+    let mut settings = match read_key_value_file(file_path) {
+        Ok(s) => s,
+        Err(e) if e.kind() == io::ErrorKind::NotFound => HashMap::new(),
+        Err(e) => return Err(e),
+    };
+
+    // Päivitä tai lisää kaikki kentät vastauksesta
+    settings.insert("status".to_string(), response.status.clone());
+    settings.insert("id".to_string(), response.id.to_string());
+    settings.insert("stamper_key".to_string(), response.stamper_key.clone());
+    settings.insert("stampername".to_string(), response.stampername.clone()); 
+    settings.insert("device_name".to_string(), response.device_name.to_string());
+    settings.insert("device_token".to_string(), response.login_token.to_string());
+    settings.insert("gps".to_string(), response.gps.to_string());
 
     // Kirjoita kaikki asetukset takaisin tiedostoon.
     let mut file = File::create(file_path)?;

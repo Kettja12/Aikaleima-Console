@@ -1,0 +1,12 @@
+[package]
+name = "teststamp"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+chrono = { version = "0.4", features = ["serde"] }
+reqwest = { version = "0.12", features = ["json"] }
+serde = { version = "1.0", features = ["derive"] }
+tokio = { version = "1", features = ["full"] }
+shared_api = { path = "../shared" }
+serde_json = "1.0"

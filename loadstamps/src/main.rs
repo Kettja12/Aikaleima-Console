@@ -1,25 +1,20 @@
-use std::io;
-
 #[tokio::main]
 async fn main() -> Result<(), reqwest::Error> {
-    let mut login_token_input = String::new();
-
-    if let Some(token) = shared_api::methods::get_setting("settings.txt", "login_token") {
-        println!("Käytetään login-tokenia asetustiedostosta.");
-        login_token_input = token;
-    }
-
-    if login_token_input.is_empty() {
-        println!("Syötä login-token:");
-        io::stdin()
-            .read_line(&mut login_token_input)
-            .expect("Rivinvaihtoa ei voitu lukea");
-    }
-
-    let login_token = login_token_input.trim();
+    // Yritetään hakea login-token asetustiedostosta.
+    // Jos sitä ei löydy, tulostetaan virhe ja poistutaan.
+    let login_token = match shared_api::methods::get_setting("settings.txt", "login_token") {
+        Some(token) => {
+            println!("Käytetään login-tokenia asetustiedostosta.");
+            token
+        }
+        None => {
+            eprintln!("Virhe: login-tokenia ei löytynyt asetustiedostosta (settings.txt).\nLisää 'login_token=YOUR_TOKEN' tiedostoon ja yritä uudelleen.");
+            return Ok(());
+        }
+    };
 
     let request = shared_api::requests::Request {
-        login_token: login_token
+        login_token: &login_token
     };
 
     // Lue palvelimen osoite asetuksista, käytä oletusarvoa jos ei löydy.

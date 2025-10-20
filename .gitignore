@@ -9,3 +9,11 @@
 /shared/target
 /loadstamps/target
 /loadstamps/settings.txt
+/*.log
+/returnDevicekey/*.lock
+/returnDevicekey/settings.txt
+/teststamp/*.lock
+/teststamp/logs/*.log
+/teststamp/settings.txt
+/teststamp/target
+/settings.txt

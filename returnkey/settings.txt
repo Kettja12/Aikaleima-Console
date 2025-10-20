@@ -1,6 +1,13 @@
-status=
-login_token=344368
 name=API-Client
-activated=false
-pincode=false
+device_name=Kuormitustesti
+login_token=48ec414d-b082-4f52-a6fc-d5619d20c7fc
+server_url=http://localhost:7000
+stampername=Yleinen
+gps=false
+status=
+*server_url=https://testi.aikaleima.fi
 id=4
+pincode=false
+device_token=bf91dccc-e0b7-4509-a5e6-eb72487bf69b
+activated=false
+stamper_key=

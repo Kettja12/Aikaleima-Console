@@ -1,22 +1,13 @@
 id;deviceKey;stamperKey;stamperName;stampcategoryKey;stampcategoryName;timestamp;state;latitude;longitude
-21;Windows pääte;123456;Jari;09080909;Sisään;14.10.2025 20.27.09;;62.87; 27.62
-20;Samsung 1;123456;Jari;bgkgf;Ulos;12.10.2025 14.12.57;;;
-19;Samsung 1;123456;Jari;09080909;Sisään;12.10.2025 14.12.53;;;
-18;Laite 2;123456;Jari;bgkgf;Ulos;12.10.2025 10.56.57;;;
-17;Laite 2;123456;Jari;09080909;Sisään;12.10.2025 10.56.52;;;
-16;Laite 2;123456;Jari;09080909;Sisään;10/12/2025 10:55:54 AM;;;
-15;Laite 2;123456;Jari;bgkgf;Ulos;10/12/2025 10:52:29 AM;;;
-14;Laite 2;123456;Jari;09080909;Sisään;10/12/2025 10:52:23 AM;;;
-13;Laite 1;123456;Jari;09080909;Sisään;12.10.2025 13.42.30;;;
-12;Laite 1;123456;Jari;bgkgf;Ulos;12.10.2025 13.42.05;;;
-11;Laite 1;123456;Jari;09080909;Sisään;29.9.2025 11.40.16;;;
-10;Laite 1;123456;Jari;bgkgf;Ulos;29.9.2025 10.38.50;;;
-9;Laite 1;123456;Jari;bgkgf;Ulos;29.9.2025 10.33.40;;;
-8;Laite 1;123456;Jari;bgkgf;Ulos;29.9.2025 10.32.11;;;
-7;Laite 1;123456;Jari;09080909;Sisään;29.9.2025 10.31.00;;;
-6;Laite 1;123456;Jari;09080909;Sisään;29.9.2025 10.03.41;;;
-5;Laite 1;123456;Jari;09080909;Sisään;29.9.2025 9.59.21;;;
-4;Laite 1;123456;Jari;;;29.9.2025 9.58.01;;;
-3;Laite 1;123456;Jari;bgkgf;Ulos;29.9.2025 9.57.11;;;
-2;Laite 1;123456;Jari;09080909;Sisään;28.9.2025 21.51.39;;;
-1;Laite 1;123456;Jari;09080909;Sisään;28.9.2025 17.00.47;;;
+e9789ace-c170-41d1-9876-49415b057310;Kuormitustesti;Kuormitustestileimaaja;Kuormitustestileimaaja;kuormitutustesti;;20.10.2025 12.22.20;;;
+d91d10cc-23ba-452d-9434-7b030c90853b;Kuormitustesti;Kuormitustestileimaaja;Kuormitustestileimaaja;kuormitutustesti;;20.10.2025 12.22.21;;;
+d553ba9a-eee0-484e-a8ed-f3cc86df992b;Kuormitustesti;Kuormitustestileimaaja;Kuormitustestileimaaja;kuormitutustesti;;20.10.2025 12.22.18;;;
+a4fdcde9-49dd-4173-baea-686da744384b;Kuormitustesti;Kuormitustestileimaaja;Kuormitustestileimaaja;kuormitutustesti;;20.10.2025 12.22.22;;;
+72515c3d-7289-4250-a0e2-87799aa55e71;Kuormitustesti;Kuormitustestileimaaja;Kuormitustestileimaaja;kuormitutustesti;;20.10.2025 12.22.24;;;
+3b79d0d4-13a2-4f77-bf51-f7b12efabf03;Kuormitustesti;Kuormitustestileimaaja;Kuormitustestileimaaja;kuormitutustesti;;20.10.2025 12.21.29;;;
+31f29120-5123-480d-9072-d35900457000;Kuormitustesti;Kuormitustestileimaaja;Kuormitustestileimaaja;kuormitutustesti;;20.10.2025 12.22.23;;;
+29da8cbc-a730-44f3-b937-63dff235c705;Kuormitustesti;Kuormitustestileimaaja;Kuormitustestileimaaja;kuormitutustesti;;20.10.2025 12.22.15;;;
+1a3df8d0-5167-43aa-bffe-7d8972b6bc45;Kuormitustesti;Kuormitustestileimaaja;Kuormitustestileimaaja;kuormitutustesti;;20.10.2025 12.22.19;;;
+19b59302-4eb8-4ef0-820a-6c2c3f998869;Kuormitustesti;Kuormitustestileimaaja;Kuormitustestileimaaja;kuormitutustesti;;20.10.2025 12.19.50;;;
+0a110565-3acd-4b68-ace2-eb547525c5da;Kuormitustesti;Kuormitustestileimaaja;Kuormitustestileimaaja;kuormitutustesti;;20.10.2025 12.22.17;;;
+017ab350-d58d-4a86-a5e0-7db8b6b08fa3;Kuormitustesti;Kuormitustestileimaaja;Kuormitustestileimaaja;kuormitutustesti;;20.10.2025 12.22.16;;;
